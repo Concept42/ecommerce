@@ -18,6 +18,10 @@ import { faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGift } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 import ProductCard from '../components/ui/ProductCard'
+import Collection from '../assets/bg-parallax3.jpg'
+import Image from 'next/image'
+import Footer from '../components/Sections/Footer'
+import SignUp from '../components/Sections/SignUp'
 
 const sliderImages = [image1, image2]
 
@@ -79,6 +83,23 @@ const Home: NextPage = () => {
           />
           <ProductCard image={ProductImage4} productName='Black Buissness jacket' edition='For men' price={600} />
         </div>
+      </section>
+      <section className='w-full h-[400px] bg-[#EFEFEF] relative'>
+        <Image src={Collection} alt='collection' className='' layout='fill' objectFit='cover' />
+
+        <div className='flex flex-col w-full h-full justify-center items-center absolute font-poppins gap-4'>
+          <h2 className='text-2xl font-thin'>NEW TREND 2018</h2>
+          <h1 className='font-medium text-5xl'>Women's Collection</h1>
+          <div className='w-40 h-0.5 bg-gray-300'></div>
+          <h2 className='text-lg font-thin'>Big Sale of this Week</h2>
+          <button className='flex px-9 py-3 bg-red-600 text-white hover:bg-gray-800 transition-all duration-300'>
+            SHOP NOW
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </>
   )

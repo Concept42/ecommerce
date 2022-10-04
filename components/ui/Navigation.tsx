@@ -15,8 +15,12 @@ function Navigation() {
           </Link>
         </div>
         <ul className='flex gap-10 font-poppins font-normal items-center  '>
-          <li className='hover:text-red-600 cursor-pointer'>HOME</li>
-          <li className='hover:text-red-600 cursor-pointer'>SHOP</li>
+          <Link href='/'>
+            <li className='hover:text-red-600 cursor-pointer'>HOME</li>
+          </Link>
+          <Link href='/shop'>
+            <li className='hover:text-red-600 cursor-pointer'>SHOP</li>
+          </Link>
           <li className='hover:text-red-600 cursor-pointer'>BLOG</li>
           <li className='hover:text-red-600 cursor-pointer'>CONTACT</li>
           <div className='flex gap-5 ml-5 justify-center items-center'>
