@@ -160,7 +160,7 @@ function Shop() {
         <div className='grid  grid-cols-3 gap-2  '>
           <ProductCard
             image={ProductImage1}
-            productName='Gray Sneakers'
+            productName='Black Sneakers'
             edition='Black Edition'
             price={100}
             newProduct

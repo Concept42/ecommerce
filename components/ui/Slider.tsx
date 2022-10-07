@@ -8,7 +8,7 @@ const delay = 10000
 const slides = ['0', '1']
 
 function Slider({ images }: Props) {
-  const [index, setIndex] = useState<number>(1)
+  const [index, setIndex] = useState<number>(0)
   const ref = useRef(null)
 
   function resetTimeout() {

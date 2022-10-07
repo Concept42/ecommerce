@@ -21,7 +21,6 @@ import ProductCard from '../components/ui/ProductCard'
 import Collection from '../assets/bg-parallax3.jpg'
 import Image from 'next/image'
 import Footer from '../components/Sections/Footer'
-import SignUp from '../components/Sections/SignUp'
 
 const sliderImages = [image1, image2]
 
