@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import hero from '../../assets/Shop/bg-parallax1.jpg'
+import DetailProduct0 from '../../assets/SingleProduct/detail-01.jpeg'
 import DetailProduct1 from '../../assets/SingleProduct/thumb-detail-01.jpg'
 import DetailProduct2 from '../../assets/SingleProduct/thumb-detail-02.jpg'
 import DetailProduct3 from '../../assets/SingleProduct/thumb-detail-03.jpg'
@@ -10,8 +11,10 @@ import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SignUp from '../../components/Sections/SignUp'
+import Footer from '../../components/Sections/Footer'
 
-const productImage = [DetailProduct1, DetailProduct2, DetailProduct3, DetailProduct4]
+const productImage = [DetailProduct0, DetailProduct1, DetailProduct2, DetailProduct3, DetailProduct4]
 
 function DetailProduct() {
   const [selectedImage, setSelectedImage] = useState<number>(0)
@@ -95,10 +98,39 @@ function DetailProduct() {
       </section>
       <section className='flex flex-col justify-between  mx-auto px-20  min-w-[1200px] max-w-7xl h-full pt-10 '>
         <div className='grid grid-cols-2'>
-          <div className='flex w-full h-full flex-col justify-start items-center px-10 '>
-            <div className='flex flex-col w-full h-full relative'>
-              <Image src={productImage[0]} className='absolute' layout='fill' objectFit='contain' />
-              <div className='grid grid-rows-1 relative'></div>
+          <div className='flex w-full h-full flex-col justify-start items-center '>
+            <div className='flex flex-col w-[80%] h-[1000px] mx-auto gap-5'>
+              <Image src={productImage[selectedImage]} sizes='xl' objectFit='cover' alt='image' />
+              <div className='grid grid-cols-4 gap-3'>
+                <Image
+                  onClick={() => setSelectedImage(0)}
+                  src={productImage[1]}
+                  objectFit='contain'
+                  className='cursor-pointer'
+                  alt='image'
+                />
+                <Image
+                  onClick={() => setSelectedImage(1)}
+                  src={productImage[2]}
+                  objectFit='contain'
+                  className='cursor-pointer'
+                  alt='image'
+                />
+                <Image
+                  onClick={() => setSelectedImage(2)}
+                  src={productImage[3]}
+                  objectFit='contain'
+                  className='cursor-pointer'
+                  alt='image'
+                />
+                <Image
+                  onClick={() => setSelectedImage(3)}
+                  src={productImage[4]}
+                  objectFit='contain'
+                  className='cursor-pointer'
+                  alt='image'
+                />
+              </div>
             </div>
           </div>
           <div className='flex flex-col w-full h-full items-start font-poppins gap-5'>
@@ -229,6 +261,10 @@ function DetailProduct() {
             </span>
           </div>
         </div>
+      </section>
+      <section>
+        <SignUp />
+        <Footer />
       </section>
     </div>
   )

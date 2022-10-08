@@ -9,22 +9,13 @@ const slides = ['0', '1']
 
 function Slider({ images }: Props) {
   const [index, setIndex] = useState<number>(0)
-  const ref = useRef(null)
-
-  function resetTimeout() {
-    if (ref.current) {
-      clearTimeout(ref.current)
-    }
-  }
 
   useEffect(() => {
-    resetTimeout()
-    setTimeout(() => setIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1)), delay)
-
-    return () => {
-      resetTimeout()
-    }
+    if (index === 0) {
+      setTimeout(() => setIndex(1), 10000)
+    } else setTimeout(() => setIndex(0), 10000)
   }, [index])
+
   const handleClickFirst = () => {
     setIndex(0)
   }
