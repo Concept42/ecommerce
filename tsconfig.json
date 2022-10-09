@@ -15,11 +15,8 @@
     "jsx": "preserve",
     "incremental": true,
     "sourceMap": true,
-    "outDir": "dist",
-    "strict": true,
-    "lib": ["esnext"],
-    "esModuleInterop": true
+    "outDir": "dist"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "src/***/**/*.ts", "src/***/**/*.tsx", "src/pages/lib/prisma.js"],
   "exclude": ["node_modules"]
 }

@@ -1,24 +1,24 @@
 import type { NextPage } from 'next'
 import Navigation from '../components/ui/Navigation'
 import Slider from '../components/ui/Slider'
-import image1 from '../assets/slider-bg-1.jpg'
-import image2 from '../assets/slider-bg-5.jpg'
+import image1 from '../../public/assets/slider-bg-1.jpg'
+import image2 from '../../public/assets/slider-bg-5.jpg'
 import CatergoryCard from '../components/ui/CatergoryCard'
-import CardImage1 from '../assets/imgbox-1-375x500.jpg'
-import CardImage2 from '../assets/imgbox-1-375x240.jpg'
-import CardImage3 from '../assets/imgbox-2-375x240.jpg'
-import CardImage4 from '../assets/imgbox-2-375x500.jpg'
-import ProductImage1 from '../assets/Products/13.jpg'
-import ProductImage2 from '../assets/Products/14.jpg'
-import ProductImage3 from '../assets/Products/15.jpg'
-import ProductImage4 from '../assets/Products/16.jpg'
+import CardImage1 from '../../public/assets/imgbox-1-375x500.jpg'
+import CardImage2 from '../../public/assets/imgbox-1-375x240.jpg'
+import CardImage3 from '../../public/assets/imgbox-2-375x240.jpg'
+import CardImage4 from '../../public/assets/imgbox-2-375x500.jpg'
+import ProductImage1 from '../../public/assets/Products/13.jpg'
+import ProductImage2 from '../../public/assets/Products/14.jpg'
+import ProductImage3 from '../../public/assets/Products/15.jpg'
+import ProductImage4 from '../../public/assets/Products/16.jpg'
 import IconBox from '../components/ui/IconBox'
 import { faTruckMoving } from '@fortawesome/free-solid-svg-icons'
 import { faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGift } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 import ProductCard from '../components/ui/ProductCard'
-import Collection from '../assets/bg-parallax3.jpg'
+import Collection from '../../public/assets/bg-parallax3.jpg'
 import Image from 'next/image'
 import Footer from '../components/Sections/Footer'
 
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
 
         <div className='flex flex-col w-full h-full justify-center items-center absolute font-poppins gap-4'>
           <h2 className='text-2xl font-thin'>NEW TREND 2018</h2>
-          <h1 className='font-medium text-5xl'>Women's Collection</h1>
+          <h1 className='font-medium text-5xl'>Women s Collection</h1>
           <div className='w-40 h-0.5 bg-gray-300'></div>
           <h2 className='text-lg font-thin'>Big Sale of this Week</h2>
           <button className='flex px-9 py-3 bg-red-600 text-white hover:bg-gray-800 transition-all duration-300'>
