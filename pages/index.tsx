@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Navigation from '../components/ui/Navigation'
-import Slider from '../components/ui/Slider'
+import Slider from '../../web-shop/src/components/ui/Slider'
 import image1 from '../assets/slider-bg-1.jpg'
 import image2 from '../assets/slider-bg-5.jpg'
 import CatergoryCard from '../components/ui/CatergoryCard'

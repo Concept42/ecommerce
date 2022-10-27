@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import logo from '../../assets/logo.png'
+
 import Image from 'next/image'
 import { FaSearch } from 'react-icons/fa'
 import { FaShoppingCart } from 'react-icons/fa'
@@ -9,11 +9,6 @@ function Navigation() {
   return (
     <>
       <div className='flex sticky top-0  w-full h-full items-center justify-around p-6 mx-auto shadow bg-white z-[999]'>
-        <div className='cursor-pointer'>
-          <Link href='/'>
-            <Image src={logo} alt='Modaz' />
-          </Link>
-        </div>
         <ul className='flex gap-10 font-poppins font-normal items-center  '>
           <Link href='/'>
             <li className='hover:text-red-600 cursor-pointer'>HOME</li>

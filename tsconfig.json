@@ -20,6 +20,6 @@
     "lib": ["esnext"],
     "esModuleInterop": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../web-shop/src/components/ui/Slider.tsx"],
   "exclude": ["node_modules"]
 }
